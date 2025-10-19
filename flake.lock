@@ -1,0 +1,133 @@
+{
+  "nodes": {
+    "flake-utils": {
+      "inputs": {
+        "systems": [
+          "systems"
+        ]
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "linux": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743993328,
+        "narHash": "sha256-iwYWkpk1ed7lXNjC8r4Gg445sdBo9unHDBA4COcsLoE=",
+        "owner": "DC-DeepComputing",
+        "repo": "fml13v01-linux",
+        "rev": "3032df5dfbfff37a40a9433c3bb8f8ea891d30ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DC-DeepComputing",
+        "repo": "fml13v01-linux",
+        "rev": "3032df5dfbfff37a40a9433c3bb8f8ea891d30ba",
+        "type": "github"
+      }
+    },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1760106635,
+        "narHash": "sha256-2GoxVaKWTHBxRoeUYSjv0AfSOx4qw5CWSFz2b+VolKU=",
+        "owner": "NixOS",
+        "repo": "nixos-hardware",
+        "rev": "9ed85f8afebf2b7478f25db0a98d0e782c0ed903",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixos-hardware",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1760580664,
+        "narHash": "sha256-/YdfibIrnqXAL8p5kqCU345mzpHoOtuVIkMiI2pF4Dc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "98ff3f9af2684f6136c24beef08f5e2033fc5389",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-25.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "opensbi": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1678437820,
+        "narHash": "sha256-y1zmAWNy5L7S9sQxCYNy7gz/i5z0mbps5i10KBuqY+A=",
+        "owner": "DC-DeepComputing",
+        "repo": "fml13v01-opensbi",
+        "rev": "c6a092cd80112529cb2e92e180767ff5341b22a3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DC-DeepComputing",
+        "ref": "fm7110-6.6",
+        "repo": "fml13v01-opensbi",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "linux": "linux",
+        "nixos-hardware": "nixos-hardware",
+        "nixpkgs": "nixpkgs",
+        "opensbi": "opensbi",
+        "systems": "systems",
+        "uboot": "uboot"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1680978846,
+        "narHash": "sha256-Gtqg8b/v49BFDpDetjclCYXm8mAnTrUzR0JnE2nv5aw=",
+        "owner": "nix-systems",
+        "repo": "x86_64-linux",
+        "rev": "2ecfcac5e15790ba6ce360ceccddb15ad16d08a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "x86_64-linux",
+        "type": "github"
+      }
+    },
+    "uboot": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748244546,
+        "narHash": "sha256-GbZrznI+ElM1kdBgyelV1HLF0rZ9Fv7Hyiffz9+Y7z4=",
+        "owner": "DC-DeepComputing",
+        "repo": "fml13v01-uboot",
+        "rev": "98d4405e84a99dec6777bdc0974f4e93203a1507",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DC-DeepComputing",
+        "ref": "fm7110-6.6",
+        "repo": "fml13v01-uboot",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
