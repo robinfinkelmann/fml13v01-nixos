@@ -57,7 +57,6 @@
             specialArgs = {
               inherit inputs;
             };
-            system = "x86_64-linux"; # TODO dont hardcode this
             modules = [
               (
                 {
@@ -105,10 +104,8 @@
 
                   sdImage.compressImage = false;
 
-                  nixpkgs.crossSystem = {
-                    config = "riscv64-unknown-linux-gnu";
-                    system = "riscv64-linux";
-                  };
+                  nixpkgs.hostPlatform = "riscv64-linux";
+                  nixpkgs.buildPlatform = "aarch64-linux";
 
                   system.stateVersion = "25.05";
                 }
